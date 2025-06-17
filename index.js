@@ -10,8 +10,14 @@ const PORT = 2000;
 app.use('/users', userRouter);
 
 app.get('/', (req, res) => {
-  res.send('Welcome!');
+    try {
+        res.send('Welcome!');
+    } catch (error) {
+
+        res.status(500).send('Something went wrong on the server.');
+    }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
