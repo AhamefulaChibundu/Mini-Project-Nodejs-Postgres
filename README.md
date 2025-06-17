@@ -34,10 +34,15 @@ npm install
 Create a .env file in the root directory and add your PostgreSQL credentials:
 
 USER=your_postgres_username
+
 PASSWORD=your_postgres_password
+
 HOST=localhost
+
 PORT=5432
+
 DATABASE=your_database_name
+
 
 ##### Note: Make sure to add .env to your .gitignore to avoid pushing your sensitive data.
 
